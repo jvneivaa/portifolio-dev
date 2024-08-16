@@ -21,12 +21,20 @@
     --font-inconsolata: 'Inconsolata', sans-serif;
     --font-maven: 'Maven Pro', sans-serif;
 
-    --title-lg: 800 56px/120% var(--font-asap);
-    --title-md: 800 24px/120% var(--font-asap);
-    --title-sm: 800 16px/120% var(--font-asap);
+    --h1: 800 56px/120% var(--font-asap);
+    --h2: 800 24px/120% var(--font-asap);
+    --h3: 800 16px/120% var(--font-asap);
 
     --subtitle: 400 20px/120% var(--font-inconsolata);
 
     --text-md: 400 16px/140% var(--font-maven);
     --text-sm: 400 14px/140% var(--font-maven);
+}
+
+h1, h2, h3 {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
 }
