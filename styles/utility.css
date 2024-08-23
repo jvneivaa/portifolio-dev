@@ -21,3 +21,7 @@
 .text-sm {
     font: var(--text-sm);
 }
+
+.grid {
+    display: grid;
+}

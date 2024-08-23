@@ -8,14 +8,12 @@ header {
     align-items: center;
 }
 
-
 #user {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 680px;
-    margin-inline: auto;
-
+    
     img {
         width: 112px;
         height: 112px;
@@ -41,7 +39,7 @@ header {
 }
 
 #tags {
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex; 
     justify-content: center;
     gap: 16px;
