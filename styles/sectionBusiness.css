@@ -1,0 +1,35 @@
+.background-color-2 {
+    background-color: var(--gray-100);
+    padding-block: 100px;
+}
+
+.detailed-services {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.card {
+    border: 3px solid var(--gray-200);
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    .title-sm {
+        color: var(--gray-600);
+        margin-bottom: 8px;
+    }
+
+    .text-sm {
+        color: var(--gray-500);
+    }
+}
+
+
+
+

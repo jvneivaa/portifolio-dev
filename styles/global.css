@@ -35,8 +35,6 @@ body {
     background-image: url(../assets/images/Background_Intro.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: var(--gray-200);
-
 }
 
 h1, h2, h3 {
