@@ -31,12 +31,6 @@
     --text-sm: 400 14px/140% var(--font-maven);
 }
 
-body {
-    background-image: url(../assets/images/Background_Intro.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 h1, h2, h3 {
     font: inherit;
 }

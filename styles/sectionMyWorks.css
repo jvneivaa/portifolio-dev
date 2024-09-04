@@ -1,3 +1,4 @@
+/* Estilo padrão para telas grandes */
 .background-color-1 { 
     background-color: var(--gray-200);
     padding-block: 100px;
@@ -8,14 +9,14 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
+}
 
-    .subtitle {
-        color: var(--red);
-    }
+.subtitle {
+    color: var(--red);
+}
 
-    .title-md {
-        color: var(--gray-600);
-    }
+.title-md {
+    color: var(--gray-600);
 }
 
 .featured-works {
@@ -24,6 +25,7 @@
 
 .projects {
     margin-top: 50px;
+    display: grid;
     grid-template-columns: repeat(3, 330px);
     gap: 24px;
     justify-content: center;
@@ -38,23 +40,64 @@
     border-radius: 12px;
     cursor: pointer;
     transition: .3s;
+}
 
-    &:hover {
-        transform: scale(1.02);
-        transition: .3s;
+.thumbnail:hover {
+    transform: scale(1.02);
+    transition: .3s;
+}
+
+.thumbnail img {
+    border-radius: 8px;
+}
+
+.title-sm {
+    padding-top: 24px;
+    color: var(--gray-600);
+}
+
+.text-sm {
+    padding-top: 8px;
+    color: var(--gray-500);
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .background-color-1 {
+        padding-block: 60px;
     }
 
-    img {
-        border-radius: 8px;
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .thumbnail {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .background-color-1 {
+        padding-block: 40px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .thumbnail {
+        padding: 8px;
+        display: flex;
+        align-items: center;
     }
 
     .title-sm {
-        padding-top: 24px;
-        color: var(--gray-600);
+        padding-top: 16px;
     }
 
     .text-sm {
-        padding-top: 8px;
-        color: var(--gray-500);
+        padding-top: 4px;
     }
 }

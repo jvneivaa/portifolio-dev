@@ -1,3 +1,4 @@
+/* Estilo padrão para telas grandes */
 .background-color-2 {
     background-color: var(--gray-100);
     padding-block: 100px;
@@ -15,18 +16,74 @@
     border-radius: 12px;
     padding: 20px;
     width: 280px;
+}
 
-    img {
-        margin-bottom: 20px;
+.card img {
+    margin-bottom: 20px;
+}
+
+.card .title-sm {
+    color: var(--gray-600);
+    margin-bottom: 8px;
+}
+
+.card .text-sm {
+    color: var(--gray-500);
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .background-color-2 {
+        padding-block: 60px;
     }
 
-    .title-sm {
-        color: var(--gray-600);
-        margin-bottom: 8px;
+    .detailed-services {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
     }
 
-    .text-sm {
-        color: var(--gray-500);
+    .card {
+        width: 100%;
+        max-width: 350px;
+        padding: 16px;
+    }
+
+    .card img {
+        margin-bottom: 16px;
+    }
+
+    .card .title-sm {
+        font-size: 1.1rem;
+        margin-bottom: 6px;
+    }
+
+    .card .text-sm {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .background-color-2 {
+        padding-block: 40px;
+    }
+
+    .card {
+        padding: 12px;
+        max-width: 100%;
+    }
+
+    .card img {
+        margin-bottom: 12px;
+    }
+
+    .card .title-sm {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+
+    .card .text-sm {
+        font-size: 0.85rem;
     }
 }
 

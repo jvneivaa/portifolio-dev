@@ -1,7 +1,5 @@
+/* Estilo padrão para telas grandes */
 header {
-    /* background: url(../assets/images/Background_Intro.png);
-    background-repeat: no-repeat;
-    background-size: contain; */
     padding: 120px 163px 183px;
     display: flex;
     flex-direction: column;
@@ -9,54 +7,61 @@ header {
     height: 100vh;
 }
 
+.background-intro {
+    background: url(../assets/images/Background_Intro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #user {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 680px;
-    
-    img {
-        width: 112px;
-        height: 112px;
-        margin-bottom: 56px;
-    }
+}
 
-    .subtitle {
-        margin-bottom: 8px;
-        color: var(--gray-500);
-        span {
-            color: var(--red);
-        }
-    }
+#user img {
+    width: 112px;
+    height: 112px;
+    margin-bottom: 56px;
+}
 
-    h1 {
-        color: var(--gray-600);
-        margin-bottom: 20px;
-    }
+.subtitle {
+    margin-bottom: 8px;
+    color: var(--gray-500);
+}
 
-    .text-sm {
-        color: var(--gray-400);
-    }
+.subtitle span {
+    color: var(--red);
+}
+
+.title-lg {
+    color: var(--gray-600);
+    margin-bottom: 20px;
+}
+
+.text-sm {
+    color: var(--gray-400);
 }
 
 #tags {
     margin-top: 60px;
-    display: flex; 
+    display: flex;
     justify-content: center;
     gap: 16px;
+}
 
-    div {
-        background-color: var(--gray-300);
-        padding: 8px 16px;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
+#tags div {
+    background-color: var(--gray-300);
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
-        p {
-            color: var(--gray-500);
-        }
-    }
+#tags div p {
+    color: var(--gray-500);
 }
 
 .arrowDown {
@@ -64,4 +69,65 @@ header {
     cursor: pointer;
 }
 
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    header {
+        padding: 80px 20px 100px;
+        height: auto;
+    }
 
+    #user {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    #user img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .text-sm {
+        text-align: center;
+    }
+
+    #tags {
+        flex-wrap: wrap;
+        margin-top: 40px;
+        gap: 12px;
+    }
+
+    .arrowDown {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 60px 10px 80px;
+    }
+
+    #user img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .arrowDown {
+        margin-top: 30px;
+    }
+}
